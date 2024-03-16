@@ -1,0 +1,80 @@
+const greet = name => `Hello, ${name}!`;
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+50 / 13,75,37,87,5,39,98,26,79,62,62,6,90,14,96,54,83,34,75,79,55,60,51,15,7
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+let array = getRandomArray(); array.forEach(item => console.log(item));
+false * 50,39,57,29,96,90,40,34,31,30,46,20,48,83,75,28,31,83,7,56,91,75,34,58,93,49,41,33,51,55,27,44,76,7,29,53,4,61,41,36,80,54,85,34,71,9,48,8,6,25,9,33,62,51,66,11,6,69,22,80,0,91,42,88,51,55,65,54,84,20,26,64,48,49,52,29,5,62,30,13,86
+const reverseString = str => str.split("").reverse().join("");
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const isEven = num => num % 2 === 0;
+kiwi
+
+// This is a comment
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const removeDuplicates = array => Array.from(new Set(array));
+93 * 91,18,60,62,40,60,65,55,69,66,60,37,87,14,24,77,24,59,56,76,97,13,47,78,71,20,69,9,79,60,18,28,3,74,15,43,51,19,70,41,24,78,98,61,49,48,77,79,82,30,80,97,24,96,48,21,56,23,97,87,77,34,3,81,49,99,45,76,7,11,20,71,81,63,88,39,93,77,82,94,2,83
+let array = getRandomArray(); array.forEach(item => console.log(item));
+93 - 57,67,93,72,55,55,51,83,85,93,15,10,98,67,94,65,43,81,51,46,95,25,62,65,76,55,99,27,39,47,49,63,82,9,60,87,13,28,77,86,22,52,75,58,54,55,59,31,7,74,48,99,65,41,8
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+77,76,95,71,43,48,22,35,12,59,9,7,33,99,1,53,26,67,5,99,96,84,76,2,49,29,78,12,76,55,26,50,36,6,60,41,44,84,57,58,26,52,90,63,14,69,32,42,89,86,47,10,33,37,86,34,4,96,55,66,87,79,96,32,38,2,75,20,63,22,22,4,86,75,59,94,95,1,59,25,30,32,65,92,69,34,9 * grape
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+28 / 60,46,14,82,93,25,3,68,4,71,79,1,10,20,64,21,93,28,8,42,36,70,7,38,50,72,23,69,13,38,84,66,24,85,26,63,32,49,14,75,82,80,89,96,98,46,74,43,29,68,62,47,8,24,7,37,66,91,19,64,33,88,46,5,37,81,53,22,81,43,31,90
+const randomNumber = getRandomNumber();
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+// This is a comment
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+27 + 99
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+false * false
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const reverseString = str => str.split("").reverse().join("");
+const getRandomSubset = (array, size) => array.slice(0, size);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+36,13 * false
+const formatDate = date => new Date(date).toLocaleDateString();
+
+12,1,83,6,8,75,12,35,98,45,27,37,41,93,13,94,95,68,14,18,93,83,74,64,0,83,93,12,66,52,93,8,21,57,58,74,20,89,7,32,70,78,26,60,91,71,40,80,92,51 * 37
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const sum = (a, b) => a + b;
+
+const reverseString = str => str.split("").reverse().join("");
+const getRandomSubset = (array, size) => array.slice(0, size);
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const formatDate = date => new Date(date).toLocaleDateString();
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+true * 58
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+const isEven = num => num % 2 === 0;
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const greet = name => `Hello, ${name}!`;
+const capitalizeString = str => str.toUpperCase();
+false / 67,78,22,84,14,62,43,41,76,85,68,44,17,49,66,88,65,11,69,2,20,0,24,43,32,21,94,67,11,84,82,32,52,5,6,83,53,41,40,82,22,59,45,34,12,84,91,23,57,1,1,92,59,3,35,29,69,0,9,32,71,65,13,89,33
+const randomNumber = getRandomNumber();
+32 * true
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+98 * apple
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
